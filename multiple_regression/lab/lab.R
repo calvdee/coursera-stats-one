@@ -15,7 +15,7 @@
 # Check your working directory
 # getwd()
 # If necessary, set your working directory
-setwd("/Volumes/Conway/R")
+setwd("~/code/r/stats-one/multiple_regression/lab/")
 
 # If necessary, install packages
 # install.packages("psych")
@@ -24,7 +24,7 @@ setwd("/Volumes/Conway/R")
 library(psych)
 
 # Read data into a dataframe called FS (Faculty Salary)
-FS <- read.table("Stats1.13.Lab.06.txt", header = T)
+FS <- read.table("data.tsv", header = T)
 
 # If you want to view the data
 # View(FS)
