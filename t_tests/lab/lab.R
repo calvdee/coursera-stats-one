@@ -116,7 +116,7 @@ ggplot(wm, aes(x=cond, y=gain, fill=cond)) +
 #   - look accross 4 training conditions - is there a significant difference in gain scores?
 leveneTest(wm.t$gain, wm.t$cond, center="mean")
 leveneTest(wm.t$gain, wm.t$cond)
-# Neither f value is signficant - not a significant difference of variance accross variance
+# Neither f value is signficant - not a significant difference of variance accross conditions
 #   - fine to get pooled estimate of error
 
 aov.model = aov(wm.t$gain ~ wm.t$cond)
